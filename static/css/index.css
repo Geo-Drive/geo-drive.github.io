@@ -168,3 +168,20 @@ body {
   border-radius: 10px;
   padding: 5px 10px;
 }
+
+.vertical-dashed-line {
+  border-left: 2px dashed #ccc;
+  height: 200px;
+  margin: 0 10px;
+  align-self: center;
+}
+
+.columns {
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

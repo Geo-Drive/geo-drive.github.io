@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/image.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -50,7 +50,7 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu">
+  <!-- <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="#">
       <span class="icon">
@@ -58,7 +58,7 @@
       </span>
       </a>
     </div>
-  </div>
+  </div> -->
 </nav>
 
 <section class="hero">
@@ -68,7 +68,7 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">GeoDrive: 3D Geometry-Informed Driving World Model with Precise Action Control</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Paper ID: 2626</span>
+            <span class="author-block">Anonymous submission to NeurIPS 2025</span>
           </div>
         </div>
       </div>
@@ -80,16 +80,105 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Action Following</h2>
+        <h2 class="title is-3"><span class="light-blue-text-box">Action Following (Sec. 4.2)</span></h2>
         <div class="content has-text-justified">
           <p>
             <!-- Content for Action Following -->
           </p>
           <div class="content has-text-centered">
-            <video id="action-following-video" controls playsinline width="75%">
-              <source src="./static/videos/teaser.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <div class="columns">
+              <div class="column">
+                <p>Ground Truth</p>
+                <video controls width="100%"><source src="./static/videos/sample_004102_gt.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+              </div>
+              <div class="vertical-dashed-line"></div>
+              <div class="column">
+                <p><strong>GeoDrive (ours)</strong></p>
+                <video controls width="100%"><source src="./static/videos/sample_004102_gt.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+              </div>
+              <div class="column">
+                <p>Vista</p>
+                <video controls width="100%"><source src="./static/videos/NUSCENES_004102_vista.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <p>Ground Truth</p>
+                <video controls width="100%"><source src="./static/videos/sample_000543_gt.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+              </div>
+              <div class="vertical-dashed-line"></div>
+              <div class="column">
+                <p><strong>GeoDrive (ours)</strong></p>
+                <video controls width="100%"><source src="./static/videos/sample_000543_ours.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+              </div>
+              <div class="column">
+                <p>Vista</p>
+                <video controls width="100%"><source src="./static/videos/NUSCENES_000543.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+              </div>
+            </div>
+
+            <h3>More: Reverse Trajectory</h3>
+            <div class="columns">
+              <div class="column">
+                <p><strong>GeoDrive (ours)</strong></p>
+                <video controls width="100%"><source src="./static/videos/sample_000428_return.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+              </div>
+              <div class="column">
+                <p>Vista</p>
+                <video controls width="100%"><source src="./static/videos/NUSCENES_000428_reverse.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <p><strong>GeoDrive (ours)</strong></p>
+                <video controls width="100%"><source src="./static/videos/sample_000598_return.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+              </div>
+              <div class="column">
+                <p>Vista</p>
+                <video controls width="100%"><source src="./static/videos/NUSCENES_000598_reverse.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+              </div>
+            </div>
+
+            <!-- Add more rows as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3"><span class="light-blue-text-box">Prediction Quality & Motion Understanding <br><br> (Sec. 4.2)</span></h2>
+          <div class="content has-text-justified">
+            <p>
+              <!-- Content for Motion Understanding -->
+            </p>
+            <div class="content has-text-centered">
+              <div class="columns">
+                <div class="column">
+                  <p><strong>GeoDrive (ours)</strong></p>
+                  <video controls width="100%"><source src="./static/videos/sample_004008_ours.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                </div>
+                <div class="column">
+                  <p>Vista</p>
+                  <video controls width="100%"><source src="./static/videos/NUSCENES_004008.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <p><strong>GeoDrive (ours)</strong></p>
+                  <video controls width="100%"><source src="./static/videos/sample_000731_ours.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                </div>
+                <div class="column">
+                  <p>Vista</p>
+                  <video controls width="100%"><source src="./static/videos/NUSCENES_000731.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                </div>
+                
+              </div>
+              <!-- Add more rows as needed -->
+            </div>
           </div>
         </div>
       </div>
@@ -102,7 +191,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div>
-          <h2 class="title is-3"><span class="light-blue-text-box">Novel-View Synthesis</span></h2>
+          <h2 class="title is-3"><span class="light-blue-text-box">Novel-View Synthesis (Sec. 4.3)</span></h2>
           <div class="content has-text-centered">
             <div class="content has-text-centered">
               <h3>Original Video</h3>
@@ -177,7 +266,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3"><span class="light-blue-text-box">Object Editing</span></h2>
+        <h2 class="title is-3"><span class="light-blue-text-box">Object Editing (Sec. 4.4)</span></h2>
         <div class="columns">
           <div class="column">
             <h3>Original Video</h3>
@@ -197,13 +286,11 @@
   </div>
 </section>
 
-<hr style="border: 1px solid #000;">
-
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3"><span class="light-blue-text-box">Object Trajectory Control</span></h2>
+        <h2 class="title is-3"><span class="light-blue-text-box">Object Trajectory Control (Sec. 4.4)</span></h2>
         <div class="columns">
           <div class="column">
             <h3>Original Video</h3>
